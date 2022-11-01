@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(40,37,58);
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="setcourse_btn">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>190</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#setcourse_btn {
+    background-color: none;
+    border: 1.5px solid rgb(36,199,103) ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#setcourse_btn:hover {
+    background-color: rgb(36,199,103);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Set Course 
+for
+Teacher</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registerstudents_btn">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>190</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#registerstudents_btn{
+    background-color: none;
+    border: 1.5px solid rgb(126,127,243) ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#registerstudents_btn:hover {
+    background-color: rgb(126,127,243);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Course
+Registration
+for student</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout_btn">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>510</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#logout_btn {
+    background-color: none;
+    border: 1.5px solid rgb(234,77,86) ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#logout_btn:hover {
+    background-color: rgb(234,77,86);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcome">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans Light</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+</string>
+    </property>
+    <property name="text">
+     <string>Admin</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>480</y>
+      <width>841</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addcourse_btn">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#addcourse_btn {
+    background-color: none;
+    border: 1.5px solid rgb(208,54,150) ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#addcourse_btn:hover {
+    background-color: rgb(208,54,150) ;
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Add Course</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_all_btn">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>510</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#delete_all_btn {
+    background-color: none;
+    border: 1.5px solid  rgb(234,77,86);
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#delete_all_btn:hover {
+    background-color:  rgb(234,77,86);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Delete All</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionContact">
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </action>
+  <action name="actionFeedback">
+   <property name="text">
+    <string>Feedback</string>
+   </property>
+  </action>
+  <action name="actionLog_out">
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </action>
+  <action name="actionLog_out_2">
+   <property name="text">
+    <string>Log out</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

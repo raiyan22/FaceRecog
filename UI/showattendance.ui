@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(40,37,58);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="show_data_btn">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>450</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#show_data_btn {
+    background-color: none;
+    border: 1.5px solid  rgb(36,199,103); ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#show_data_btn:hover {
+    background-color: rgb(36,199,103);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Show</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backtodashboard_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#backtodashboard_btn {
+    background-color: none;
+    border: 1.5px solid rgb(130,130,240) ;
+	border-radius: 5px;
+    color: white;
+}
+
+QPushButton#backtodashboard_btn:hover {
+    background-color:  rgb(130,130,240);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Back to Dashboard</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="show_data_lbl">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>90</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color :  rgb(36,199,103);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>280</width>
+      <height>390</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:5px;background:#eee;/*border:2px solid #333;padding-left:5px;*/</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Present at</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>110</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>Course Code</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="course_code_cbox">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>140</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+border: 2px solid rgb(106, 98, 154);
+border-radius: 8px;
+background: rgb(34,31,44);
+color: white;
+padding: 12px;
+font-size:15px;
+}
+
+/*
+QComboBox:editable {
+	//drop down menur border radius dewa hoile konay konay following color deha jaye
+    background: red; 
+	border-radius: 8px;
+	color: white;
+}*/
+
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+background:  rgb(34,31,44); color: white;
+}
+QComboBox:!editable:hover, QComboBox::drop-down:!editable {
+background:   rgb(34,31,44); color: aqua;
+}
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+	/* on state howar por main combobox er bgcolor ekhane change korte parbo*/
+    background:  rgb(34,31,44);
+	font-weight: 30px;
+}
+QComboBox:on { /* shift the text when the popup opens */
+color:white;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 30px; /* arrow er separator ta left theke 30px duure */
+
+    border-left-width: 2px;
+    border-left-color: rgb(106, 98, 154);
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 8px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 8px;
+	/* extra */
+	/*border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;*/
+
+}
+QComboBox::drop-down:hover {
+   background: transparent;
+}
+
+QComboBox::down-arrow {
+    /*image: url(/usr/share/icons/crystalsvg/16x16/actions/downdown.png);*/
+	image: url(./downdown.png)
+}
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox QAbstractItemView {
+border: 2px solid rgb(106, 98, 154);
+border-radius: 8px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top:5px;
+padding-bottom:5px;
+selection-background-color:  rgb(106, 98, 154);
+color: white;
+}
+</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="cal">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>190</y>
+      <width>401</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCalendarWidget QAbstractItemView
+{ 
+    /* selection-background-color: ; border-radius: 10px;selection-color: white; */
+    selection-background-color:  rgb(40,37,58);
+    selection-color: white;
+}
+QCalendarWidget QWidget 
+{
+  
+/*title color color: white;  background-color:  rgb(106, 98, 154);  */
+background-color:  rgb(106, 98, 154);
+ 
+}
+QCalendarWidget QTableView
+{
+/* border-bottom: 2px solid rgb(106, 98, 154); */
+
+    background-color:  rgb(106, 98, 154);
+
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="export_csv_btn">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>440</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#export_csv_btn {
+    background-color: none;
+    border: 1.5px solid rgb(36,199,103) ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#export_csv_btn:hover {
+    background-color: rgb(36,199,103);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Export CSV</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcome">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>351</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+</string>
+    </property>
+    <property name="text">
+     <string>View Attendance</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="show_data_btn_2">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>510</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Product Sans</family>
+      <pointsize>14</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#show_data_btn_2{
+    background-color: none;
+    border: 1.5px solid  rgb(36,199,103); ;
+	border-radius: 10px;
+    color: white;
+}
+
+QPushButton#show_data_btn_2:hover {
+    background-color: rgb(36,199,103);
+	color: rgb(54, 54, 54)
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Show Count</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>show_data_btn</zorder>
+   <zorder>backtodashboard_btn</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>label_8</zorder>
+   <zorder>course_code_cbox</zorder>
+   <zorder>cal</zorder>
+   <zorder>export_csv_btn</zorder>
+   <zorder>welcome</zorder>
+   <zorder>show_data_lbl</zorder>
+   <zorder>show_data_btn_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
